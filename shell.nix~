@@ -1,8 +1,0 @@
-{ pkgs ? (import <nixpkgs> {} ) }:
-
-(import ./default.nix) {
-  stdenv  = pkgs.stdenv;
-  haskell-packages = pkgs.haskell.packages;
-  glpk = pkgs.glpk;
-  pcre = pkgs.pcre;	
- }
